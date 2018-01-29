@@ -1,0 +1,21 @@
+PART 1
+https://www.digitalocean.com/community/tutorials/how-to-install-zeromq-from-source-on-a-centos-6-x64-vps
+PART 2
+https://www.digitalocean.com/community/tutorials/how-to-work-with-the-zeromq-messaging-library
+
+
+The way these sockets work depend on the type of socket chosen. And flow of messages being sent depend on the chosen patterns, of which there are four:
+
+Request/Reply Pattern: Used for sending a request and receiving subsequent replies for each one sent.
+Publish/Subscribe Pattern: Used for distributing data from a single process (e.g. publisher) to multiple recipients (e.g. subscribers).
+Pipeline Pattern: Used for distributing data to connected nodes.
+Exclusive Pair Pattern: Used for connecting two peers together, forming a pair.
+
+
+ZeroMQ Transport Types
+ZeroMQ offers four different types of transport for communication. These are:
+
+In-Process (INPROC): Local (in-process) communication transport.
+Inter-Process (IPC): Local (inter-process) communication transport.
+TCP: Unicast communication transport using TCP.
+PGM: Multicast communication transport using PGM.
